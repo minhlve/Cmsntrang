@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+  <img src="avt.jpg" class="avatar">
+
+  <h1>Happy Birthday 🎉</h1>
+
+  <p class="intro">
+    Chúc mừng sinh nhật người phụ nữ tuyệt vời nhất 💖
+    Mong rằng hôm nay sẽ là một ngày thật hạnh phúc,
+    đầy tiếng cười và những điều ngọt ngào dành riêng cho em.
+  </p>
+
+  <button onclick="showMessage()">Nhấn vào đây 💌</button>
+
+  <div id="messageBox" class="hidden">
+    <h2>Điều đặc biệt dành cho em ✨</h2>
+<div class="text-box">
+     <p>Hôm nay 9/6 là một ngày thật đặc biệt và ý nghĩa đối với em, bởi đây là ngày mà mỗi năm chỉ đến một lần—ngày cô gái tuyệt vời nhất được sinh ra 💖 </p></div>
+<div class="text-box">
+    <p>
+    em sẽ luôn xinh đẹp, hạnh phúc và gặp thật nhiều may mắn trong cuộc sống. Mong rằng nụ cười sẽ mãi hiện trên gương mặt xinh xắn ấy, để mỗi ngày của em đều tràn ngập niềm vui và sự yêu thương ✨ <br>
+    </p></div>
+<div class="text-box"><p>
+Chúc em có một tuổi mới thật rực rỡ, luôn được yêu thương, bình an và trở thành cô gái hạnh phúc nhất trong ngày hôm nay 🎂🌸
+    </p></div>
+
+  </div>
+</div>
+<script>
+  function showMessage(){
+    const box = document.getElementById("messageBox");
+
+    if(box.style.display === "block"){
+        box.style.display = "none";
+    }
+    else{
+        box.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>

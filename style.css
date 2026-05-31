@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9ec4,#ffcce0,#ffe6f0);
+    overflow-y:auto;
+    padding: 20px 0;
+}
+
+.container{
+    width:90%;
+    max-width:420px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    color:white;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+    animation:fadeIn 2s;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #FF6699;
+    margin-bottom:15px;
+}
+
+
+h1{
+    font-size:30px;
+    color:white;
+    text-shadow:0 0 10px #ff4f81;
+}
+h2{
+  font-size:28px;
+  color: white;
+  text-shadow: 0 0 10px #ff4f81;
+}
+
+.intro{
+    font-size:17px;
+    line-height:1.6;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4f8b;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+p{
+  color: 	#FF6699;
+  font-size: 18px;
+}
+.container-p{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.text-box{
+    flex: 1;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.text-box p{
+    margin: 0;
+    color: #ff5c9d;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+#messageBox{
+    margin-top:25px;
+    animation:show 1s;
+}
+
+
+.photo{
+    width:100%;
+    margin-top:15px;
+    border-radius:20px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.stars{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:url('https://i.imgur.com/YKY28eT.png');
+    animation:move 40s linear infinite;
+    opacity:0.4;
+}
+
+@keyframes move{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:1000px 1000px;
+    }
+}
